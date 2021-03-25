@@ -1,1 +1,1 @@
-# JS-courses-tasks
+Collected some homework from the Frontend course
