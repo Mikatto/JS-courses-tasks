@@ -1,0 +1,3 @@
+Write a script that will add the `last` class to all the last li in groups.
+Write the function setFirstItemClassName (level), where level is the number of the nesting level in which you want to make changes. The setFirstItemClassName function should set the first tag of the group - the class `first-item`
+* when adding classes - the background color should change to red (first) and green (last), with animation - a delay of 2 seconds

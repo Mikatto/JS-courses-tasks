@@ -1,0 +1,1 @@
+create hero card using data from JSON file

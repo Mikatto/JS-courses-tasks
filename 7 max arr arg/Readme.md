@@ -1,0 +1,1 @@
+Write the getMaxs (args) function, where args is any number of arrays. The function must return the maximums of all the passed arrays as a string, separated by the separator '; '.

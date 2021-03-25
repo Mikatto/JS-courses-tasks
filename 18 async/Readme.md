@@ -1,0 +1,3 @@
+Make 3 asynchronous operations (simulate using the getPromise () function, which contains setTimeout (resolve (), timer)). Each promise (getPromise) returns a number between 0 and 100.
+Create a wrapper runAfter () that receives 3 functions in an array as an argument, which will be executed after all 3 asynchronous operations have finished.
+function runAfter ([afterFirstPromise, afterSecondPromise, afterThirdPromise]) {}

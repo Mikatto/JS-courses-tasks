@@ -1,0 +1,1 @@
+Write the function assignObjects (obj1, obj2), which takes 2 objects as arguments and returns a new one, which consists of the properties of both objects (glue). If the property is repeated, then take the value of the second object
