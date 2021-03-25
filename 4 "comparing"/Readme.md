@@ -1,0 +1,1 @@
+Write a function that takes two arrays as an argument (parameter) and compares the sums of all NUMERIC elements. The array, the sum of which is large, should be returned by the function.
