@@ -1,0 +1,241 @@
+// ------------------- GLOBAL
+
+*{
+    box-sizing: border-box;
+}
+
+$image:"images/";
+$cars:"images/cars/";
+
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 8px 10px;
+}
+.wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+// ------------------- INNER
+
+.tree{
+    background-image:url($image+'trees.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 76px;
+    height: 66px;
+    position: absolute;
+    top: -65px;
+    left:0px;
+
+    &_second{
+    left:38%;
+    }
+
+    &_third{
+    right:0px;
+    left:unset;
+    }
+}
+
+.swimmer{
+    background-image:url($image+'swimming.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 76px;
+    height: 66px;
+    position: absolute;
+    bottom: -5px;
+    left:20px;
+}
+
+.road{
+    background-color: #435B6C;
+    min-width:84px;
+    padding: 0 5px;
+    display: flex;
+    position:relative;
+
+    &__horizontal{
+        height:84px;
+        width: 100%;
+        padding: 5px 0 ;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+}
+
+.line{
+    border-left: 4px solid #FFD15E;
+    border-right: 4px solid #FFD15E;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &_horizontal{
+        border-left:none;
+        border-right: none;
+        border-top: 4px solid #FFD15E;
+        border-bottom: 4px solid #FFD15E;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    &_separator{
+    border:dashed white;
+    border-width: 2px;
+    }
+}
+
+.area{
+    min-width:300px;
+    position: relative;
+
+    &__garage{
+        background-color: #d4d4d4;
+        padding: 18px 18px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+    }
+
+    &__home{
+        background-color: #d4d4d4;
+        padding: 18px 18px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    &__park{
+        background-color: #A1D468;
+        width:84px;
+        min-width: unset;
+        padding: 0;
+    }
+
+    &__leisure{
+        background-color: #5fb4ff;
+        padding: 0;
+        height: 190px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// ------------------- CAR
+
+.car{
+    background-image:url($image+'first.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 66px;
+    height: 50px;
+    margin-right: 12px;
+
+    &:last-child{
+        margin-right:0 ;
+    }
+}
+
+.first{
+    background-image: url($cars+'first.svg');
+}
+
+.second{
+    background-image: url($cars+'second.svg');
+}
+
+.third{
+    background-image: url($cars+'third.svg');
+}
+
+.fourth{
+    background-image: url($cars+'fourth.svg');
+}
+
+
+// ------------------- HOME
+
+.home{
+    background-image:url($image+'home--blue.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 57px;
+    height: 57px;
+    margin: 6px;
+
+    &:last-child{
+        margin-right:0 ;
+    }
+}
+
+.line-house{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    &__between{
+        justify-content: space-between;
+    }
+}
+
+.degrees{
+
+    &90{
+        transform: rotate(90deg);
+    }
+    
+    &m90{
+        transform: rotate(-90deg);
+    }
+
+    &180{
+        transform: rotate(180deg);
+    }
+}
+
+.blue{
+    background-image: url($image+'home--blue.svg');
+}
+
+.pink{
+    background-image: url($image+'home--pink.svg');
+}
+
+.purple{
+    background-image: url($image+'home--purple.svg');
+}
+
+// ------------------- LEISURE
+
+.zone{
+    background-image:url($image+'home--blue.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    &__football{
+        background-image:url($image+'football-field.svg');
+    }
+
+    &__whale{
+        background-image:url($image+'whale.svg');
+        width: 127px;
+        height: 104px;
+    }
+
+    &__ice-hockey{
+        background-image:url($image+'ice-hockey.svg');
+    }
+}

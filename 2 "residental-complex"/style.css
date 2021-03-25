@@ -1,0 +1,284 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding: 8px 10px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.tree {
+  background-image: url("images/trees.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 76px;
+  height: 66px;
+  position: absolute;
+  top: -65px;
+  left: 0px;
+}
+
+.tree_second {
+  left: 38%;
+}
+
+.tree_third {
+  right: 0px;
+  left: unset;
+}
+
+.swimmer {
+  background-image: url("images/swimming.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 76px;
+  height: 66px;
+  position: absolute;
+  bottom: -5px;
+  left: 20px;
+}
+
+.road {
+  background-color: #435B6C;
+  min-width: 84px;
+  padding: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.road__horizontal {
+  height: 84px;
+  width: 100%;
+  padding: 5px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.line {
+  border-left: 4px solid #FFD15E;
+  border-right: 4px solid #FFD15E;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.line_horizontal {
+  border-left: none;
+  border-right: none;
+  border-top: 4px solid #FFD15E;
+  border-bottom: 4px solid #FFD15E;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.line_separator {
+  border: dashed white;
+  border-width: 2px;
+}
+
+.area {
+  min-width: 300px;
+  position: relative;
+}
+
+.area__garage {
+  background-color: #d4d4d4;
+  padding: 18px 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.area__home {
+  background-color: #d4d4d4;
+  padding: 18px 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.area__park {
+  background-color: #A1D468;
+  width: 84px;
+  min-width: unset;
+  padding: 0;
+}
+
+.area__leisure {
+  background-color: #5fb4ff;
+  padding: 0;
+  height: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.car {
+  background-image: url("images/first.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 66px;
+  height: 50px;
+  margin-right: 12px;
+}
+
+.car:last-child {
+  margin-right: 0;
+}
+
+.first {
+  background-image: url("images/cars/first.svg");
+}
+
+.second {
+  background-image: url("images/cars/second.svg");
+}
+
+.third {
+  background-image: url("images/cars/third.svg");
+}
+
+.fourth {
+  background-image: url("images/cars/fourth.svg");
+}
+
+.home {
+  background-image: url("images/home--blue.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 57px;
+  height: 57px;
+  margin: 6px;
+}
+
+.home:last-child {
+  margin-right: 0;
+}
+
+.line-house {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.line-house__between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.degrees90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.degreesm90 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.degrees180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.blue {
+  background-image: url("images/home--blue.svg");
+}
+
+.pink {
+  background-image: url("images/home--pink.svg");
+}
+
+.purple {
+  background-image: url("images/home--purple.svg");
+}
+
+.zone {
+  background-image: url("images/home--blue.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.zone__football {
+  background-image: url("images/football-field.svg");
+}
+
+.zone__whale {
+  background-image: url("images/whale.svg");
+  width: 127px;
+  height: 104px;
+}
+
+.zone__ice-hockey {
+  background-image: url("images/ice-hockey.svg");
+}
+/*# sourceMappingURL=style.css.map */
